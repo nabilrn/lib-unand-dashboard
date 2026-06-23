@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-label="Ruang Seminar Mini">
+  <rect width="960" height="540" fill="#f8fafc"/>
+  <rect x="140" y="100" width="680" height="250" rx="18" fill="#ffffff" stroke="#166534" stroke-width="8"/>
+  <rect x="210" y="145" width="540" height="120" rx="10" fill="#dcfce7"/>
+  <rect x="250" y="300" width="460" height="26" rx="13" fill="#15803d"/>
+  <circle cx="330" cy="380" r="22" fill="#22c55e"/>
+  <circle cx="430" cy="380" r="22" fill="#22c55e"/>
+  <circle cx="530" cy="380" r="22" fill="#22c55e"/>
+  <circle cx="630" cy="380" r="22" fill="#22c55e"/>
+  <text x="480" y="465" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" font-weight="800" fill="#166534">Ruang Seminar Mini</text>
+</svg>

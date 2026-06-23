@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-label="Workshop Literasi Informasi Akademik">
+  <rect width="960" height="540" fill="#064e3b"/>
+  <rect x="68" y="70" width="824" height="400" rx="24" fill="#ecfdf5"/>
+  <rect x="120" y="130" width="280" height="250" rx="18" fill="#10b981"/>
+  <rect x="445" y="150" width="350" height="34" rx="17" fill="#047857"/>
+  <rect x="445" y="215" width="280" height="24" rx="12" fill="#34d399"/>
+  <rect x="445" y="265" width="320" height="24" rx="12" fill="#6ee7b7"/>
+  <text x="480" y="430" text-anchor="middle" font-family="Arial, sans-serif" font-size="40" font-weight="800" fill="#064e3b">Literasi Informasi</text>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-label="Orientasi Perpustakaan untuk Mahasiswa Baru">
+  <rect width="960" height="540" fill="#065f46"/>
+  <rect x="80" y="78" width="800" height="385" rx="24" fill="#f0fdf4"/>
+  <path d="M480 130 690 238 480 346 270 238Z" fill="#10b981"/>
+  <path d="M360 292v70c84 42 156 42 240 0v-70l-120 62Z" fill="#047857"/>
+  <circle cx="690" cy="238" r="18" fill="#f59e0b"/>
+  <text x="480" y="430" text-anchor="middle" font-family="Arial, sans-serif" font-size="40" font-weight="800" fill="#065f46">Orientasi Perpustakaan</text>
+</svg>

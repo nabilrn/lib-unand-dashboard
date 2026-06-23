@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-label="Klinik Penelusuran Jurnal Internasional">
+  <rect width="960" height="540" fill="#1e3a8a"/>
+  <rect x="90" y="80" width="780" height="380" rx="22" fill="#dbeafe"/>
+  <circle cx="280" cy="255" r="110" fill="#2563eb"/>
+  <rect x="450" y="145" width="300" height="42" rx="21" fill="#1d4ed8"/>
+  <rect x="450" y="225" width="350" height="28" rx="14" fill="#60a5fa"/>
+  <rect x="450" y="285" width="250" height="28" rx="14" fill="#93c5fd"/>
+  <text x="480" y="425" text-anchor="middle" font-family="Arial, sans-serif" font-size="40" font-weight="800" fill="#1e3a8a">Penelusuran Jurnal</text>
+</svg>

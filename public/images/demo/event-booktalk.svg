@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-label="Bedah Buku dan Diskusi Riset Kampus">
+  <rect width="960" height="540" fill="#78350f"/>
+  <rect x="100" y="78" width="760" height="385" rx="24" fill="#fffbeb"/>
+  <rect x="210" y="135" width="180" height="250" rx="10" fill="#f59e0b"/>
+  <rect x="410" y="135" width="180" height="250" rx="10" fill="#ef4444"/>
+  <rect x="610" y="135" width="140" height="250" rx="10" fill="#10b981"/>
+  <text x="480" y="430" text-anchor="middle" font-family="Arial, sans-serif" font-size="40" font-weight="800" fill="#78350f">Bedah Buku</text>
+</svg>

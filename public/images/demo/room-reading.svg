@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-label="Ruang Baca Utama">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ecfdf5"/>
+      <stop offset="1" stop-color="#bbf7d0"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="540" fill="url(#bg)"/>
+  <rect x="80" y="80" width="800" height="320" rx="18" fill="#ffffff" stroke="#047857" stroke-width="8"/>
+  <rect x="126" y="130" width="190" height="210" rx="10" fill="#064e3b"/>
+  <rect x="354" y="130" width="190" height="210" rx="10" fill="#0f766e"/>
+  <rect x="582" y="130" width="190" height="210" rx="10" fill="#15803d"/>
+  <rect x="120" y="382" width="720" height="30" rx="15" fill="#065f46"/>
+  <text x="480" y="465" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" font-weight="800" fill="#064e3b">Ruang Baca Utama</text>
+</svg>

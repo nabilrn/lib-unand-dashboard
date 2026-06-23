@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-label="Ruang Multimedia">
+  <rect width="960" height="540" fill="#eff6ff"/>
+  <rect x="160" y="100" width="640" height="310" rx="20" fill="#dbeafe" stroke="#2563eb" stroke-width="8"/>
+  <rect x="220" y="150" width="220" height="145" rx="12" fill="#1e3a8a"/>
+  <rect x="520" y="150" width="220" height="145" rx="12" fill="#0369a1"/>
+  <rect x="285" y="320" width="90" height="18" rx="9" fill="#1d4ed8"/>
+  <rect x="585" y="320" width="90" height="18" rx="9" fill="#0284c7"/>
+  <text x="480" y="465" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" font-weight="800" fill="#1e40af">Ruang Multimedia</text>
+</svg>
