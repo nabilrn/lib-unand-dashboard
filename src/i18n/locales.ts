@@ -26,6 +26,7 @@ const dictionaries = {
     app: {
       title: 'Dashboard Perpustakaan Universitas Andalas',
       fallbackQuote: 'Ilmu adalah harta, praktik adalah kuncinya.',
+      landscapeOnly: 'Landscape screen only',
     },
     quotes: [
       'Membaca hari ini, memimpin esok hari.',
@@ -231,6 +232,7 @@ const dictionaries = {
     app: {
       title: 'Andalas University Library Dashboard',
       fallbackQuote: 'Knowledge is a treasure, but practice is the key to it.',
+      landscapeOnly: 'Landscape screen only',
     },
     quotes: [
       'Read today, lead tomorrow.',
@@ -436,6 +438,7 @@ const dictionaries = {
     app: {
       title: '安达拉斯大学图书馆仪表板',
       fallbackQuote: '知识是财富，实践是开启它的钥匙。',
+      landscapeOnly: 'Landscape screen only',
     },
     quotes: [
       '今日阅读，明日引领。',
@@ -641,6 +644,7 @@ const dictionaries = {
     app: {
       title: 'لوحة مكتبة جامعة أندالاس',
       fallbackQuote: 'المعرفة كنز، والممارسة مفتاحه.',
+      landscapeOnly: 'Landscape screen only',
     },
     quotes: [
       'اقرأ اليوم، وقد غدا.',

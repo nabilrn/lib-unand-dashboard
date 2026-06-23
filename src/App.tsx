@@ -1,12 +1,56 @@
 import { Routes, Route } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 import Header from './components/Header';
 import VisitorCounter from './components/VisitorCounter';
 import RoomFacility from './components/RoomFacility';
 import DashboardMain from './components/DashboardMain';
 import DashboardCard from './components/DashboardCard';
 import AdminLogin from './components/AdminLogin';
+import { useLocale } from './i18n/LocaleContext';
+
+const isLandscapeViewport = () => {
+  if (typeof window === 'undefined') return true;
+  return window.innerWidth >= window.innerHeight;
+};
+
+function useLandscapeViewport() {
+  const [isLandscape, setIsLandscape] = useState(isLandscapeViewport);
+
+  useEffect(() => {
+    const update = () => setIsLandscape(isLandscapeViewport());
+    update();
+
+    window.addEventListener('resize', update);
+    window.addEventListener('orientationchange', update);
+    return () => {
+      window.removeEventListener('resize', update);
+      window.removeEventListener('orientationchange', update);
+    };
+  }, []);
+
+  return isLandscape;
+}
+
+function LandscapeOnlyMessage() {
+  const { t } = useLocale();
+
+  return (
+    <div className="grid h-[100dvh] place-items-center overflow-hidden bg-[#f3f4f6] p-6">
+      <div role="alert" aria-live="polite" className="border-2 border-[#052e16] bg-white px-6 py-4 text-center shadow-[6px_6px_0px_0px_#052e16]">
+        <p className="text-[clamp(1.6rem,7vw,3rem)] font-black leading-none tracking-tight text-gray-900">
+          {t('app.landscapeOnly')}
+        </p>
+      </div>
+    </div>
+  );
+}
 
 function HomePage() {
+  const isLandscape = useLandscapeViewport();
+
+  if (!isLandscape) {
+    return <LandscapeOnlyMessage />;
+  }
 
   return (
     <div className="h-[100dvh] overflow-hidden flex flex-col relative bg-[#f3f4f6]">
