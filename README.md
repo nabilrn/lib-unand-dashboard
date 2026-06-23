@@ -1,79 +1,81 @@
-# Dashboard Perpustakaan Universitas Andalas
+# Universitas Andalas Library Dashboard
 
-Dashboard informasi fullscreen untuk Perpustakaan Universitas Andalas. Project ini dibuat sebagai aplikasi frontend-only untuk layar landscape seperti monitor lobby, laptop, atau display informasi perpustakaan.
+A fullscreen information dashboard for the Universitas Andalas Library. This project is built as a frontend-only application designed for landscape displays, such as lobby monitors, laptops, or library information screens.
 
-## Deskripsi Singkat
+## Overview
 
-Aplikasi ini menampilkan ringkasan layanan perpustakaan, jumlah pengunjung hari ini, fasilitas ruangan, agenda kegiatan, statistik kunjungan, peminjaman buku, peminjam aktif, dan ikhtisar koleksi. Semua data berasal dari data lokal yang disiapkan untuk kebutuhan presentasi UI, tanpa koneksi API/backend.
+The application displays an overview of library services, including today's visitor count, room facilities, upcoming events, visitor statistics, book circulation data, active borrowers, and collection summaries.
 
-## Fitur
+All information is sourced from locally prepared data for UI presentation purposes. The application does not connect to any API or backend service.
 
-- Dashboard public fullscreen dengan desain neobrutalism rapi.
-- Landscape-only guard: layar portrait menampilkan pesan `Landscape screen only`.
-- Data lokal untuk quote, cuaca, visitor counter, fasilitas, agenda, chart, leaderboard, dan statistik koleksi.
-- Localization 4 bahasa: Indonesia, English, Mandarin, Arabic.
-- Foto fasilitas dan agenda menggunakan Unsplash.
-- Admin lokal untuk manajemen konten browser-side.
-- Siap deploy ke GitHub Pages tanpa custom domain.
+## Features
+
+* Fullscreen public dashboard with a clean neobrutalist design.
+* Landscape-only guard that displays a `Landscape screen only` message on portrait screens.
+* Local data for quotes, weather, visitor counters, facilities, events, charts, leaderboards, and collection statistics.
+* Localization support for four languages: Indonesian, English, Mandarin, and Arabic.
+* Facility and event images sourced from Unsplash.
+* Local administration interface for browser-side content management.
+* Ready for deployment to GitHub Pages without a custom domain.
 
 ## Tech Stack
 
-- Vite
-- React
-- TypeScript
-- Tailwind CSS
-- Recharts
-- Motion
-- Lucide React
-- pnpm
+* Vite
+* React
+* TypeScript
+* Tailwind CSS
+* Recharts
+* Motion
+* Lucide React
+* pnpm
 
-## Struktur Penting
+## Important Project Structure
 
-- `src/data/demoData.ts`: sumber data lokal untuk dashboard.
-- `src/i18n/locales.ts`: kamus 4 bahasa.
-- `src/i18n/LocaleContext.tsx`: provider localization dan helper `t(...)`.
-- `src/components/VisitorChart.tsx`: chart utama dan statistik koleksi.
-- `src/components/Header.tsx`: header, status layanan, cuaca, waktu, dan language switcher.
-- `.github/workflows/deploy-pages.yml`: workflow deploy GitHub Pages.
-- `AGENT_CONTEXT_PROMPT.md`: handoff context untuk agent berikutnya.
+* `src/data/demoData.ts`: Local data source for the dashboard.
+* `src/i18n/locales.ts`: Translation dictionaries for all four supported languages.
+* `src/i18n/LocaleContext.tsx`: Localization provider and the `t(...)` translation helper.
+* `src/components/VisitorChart.tsx`: Main visitor chart and collection statistics component.
+* `src/components/Header.tsx`: Header containing service status, weather, time, and the language switcher.
+* `.github/workflows/deploy-pages.yml`: GitHub Pages deployment workflow.
+* `AGENT_CONTEXT_PROMPT.md`: Handoff context for the next development agent.
 
-## Menjalankan Lokal
+## Running the Project Locally
 
-Install dependencies:
+Install the dependencies:
 
 ```bash
 pnpm install
 ```
 
-Jalankan development server:
+Start the development server:
 
 ```bash
 pnpm dev
 ```
 
-Build production:
+Build the application for production:
 
 ```bash
 pnpm build
 ```
 
-Preview build:
+Preview the production build:
 
 ```bash
 pnpm preview
 ```
 
-## Deploy GitHub Pages
+## Deploying to GitHub Pages
 
-Workflow GitHub Pages sudah tersedia di `.github/workflows/deploy-pages.yml`.
+The GitHub Pages deployment workflow is available in `.github/workflows/deploy-pages.yml`.
 
-Deploy berjalan otomatis saat push ke branch `main`, atau bisa dijalankan manual dari tab Actions dengan `workflow_dispatch`.
+Deployment runs automatically whenever changes are pushed to the `main` branch. It can also be triggered manually from the **Actions** tab using `workflow_dispatch`.
 
-Konfigurasi Vite akan memakai base path otomatis dari `GITHUB_REPOSITORY` saat environment `GITHUB_PAGES=true`, sehingga asset tetap valid untuk URL GitHub Pages berbasis repository.
+The Vite configuration automatically determines the appropriate base path from `GITHUB_REPOSITORY` when the `GITHUB_PAGES=true` environment variable is enabled. This ensures that all assets remain accessible when the application is deployed using a repository-based GitHub Pages URL.
 
-## Catatan Pengembangan
+## Development Notes
 
-- Jangan menambahkan API call, proxy backend, SSE, WebSocket, atau env API tanpa instruksi eksplisit.
-- Konten public dashboard sebaiknya ditambahkan melalui `src/data/demoData.ts` dan `src/i18n/locales.ts`.
-- Untuk teks public dashboard, gunakan `useLocale().t(...)` agar tetap mendukung 4 bahasa.
-- Dashboard public ditargetkan untuk landscape. Mobile portrait sengaja diblokir.
+* Do not add API calls, backend proxies, Server-Sent Events, WebSockets, or API-related environment variables unless explicitly instructed.
+* Public dashboard content should be added or updated through `src/data/demoData.ts` and `src/i18n/locales.ts`.
+* Use `useLocale().t(...)` for all public dashboard text to maintain support for all four languages.
+* The public dashboard is designed specifically for landscape displays. Portrait mobile screens are intentionally blocked.
