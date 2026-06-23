@@ -13,7 +13,7 @@ import {
   CloudFog
 } from "lucide-react";
 import { useState, useEffect, useMemo } from "react";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { ImageWithFallback } from "./common/ImageWithFallback";
 import { useSettings } from "../context/SettingsContext";
 import { getLibraryQuotes, getLibraryWeather } from "../data/demoData";
 import { useLocale } from "../i18n/LocaleContext";
