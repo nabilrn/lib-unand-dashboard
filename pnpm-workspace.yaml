@@ -1,5 +1,5 @@
 allowBuilds:
-  - "esbuild"
-  - "sharp"
-  - "@sveltejs/adapter-node"
-  - "@swc/core"
+  "esbuild": true
+  "sharp": true
+  "@sveltejs/adapter-node": true
+  "@swc/core": true
