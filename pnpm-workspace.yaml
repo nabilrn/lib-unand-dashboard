@@ -2,3 +2,4 @@ allowBuilds:
   - "esbuild"
   - "sharp"
   - "@sveltejs/adapter-node"
+  - "@swc/core"
