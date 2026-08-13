@@ -66,12 +66,5 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
-  },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "esbuild",
-      "sharp",
-      "@sveltejs/adapter-node"
-    ]
   }
 }
